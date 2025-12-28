@@ -71,7 +71,7 @@ Out of scope:
 
 - FR6: Operational Workflow automation
 
-  The system shall trigger operational workflows based on product lifecycle classification and inventory risk to support timely pricing, restock and marketing actions.
+  The system shall trigger operational workflows based on product lifecycle classification and inventory risk to support timely restock actions.
 
 ---
 
@@ -97,5 +97,6 @@ Out of scope:
 | FR4 | Product prioritization effectiveness | Consistency of prioritized product list across teams |
 | FR5 | Forecast reliability                 | Forecast vs actual sales trend comparison     |
 | FR6 | Operational response efficiency      | Reduction in process steps, Decision turnaround time from insight to action |
+
 
 
