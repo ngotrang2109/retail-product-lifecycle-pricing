@@ -2,7 +2,7 @@
 
 ## 1. Business Problem
 Retail businesses face inventory imbalances (overstock/shortage) owing to:
-- Products at different lifecycle stages (new, growth, decline).
+- Products at different lifecycle stages (new, growth, maturity, decline).
 - Pricing not aligned with sales performance.
 - Lack of demand forecasting and slow operational reactions.
 
@@ -97,4 +97,5 @@ Out of scope:
 | FR4 | Product prioritization effectiveness | Consistency of prioritized product list across teams |
 | FR5 | Forecast reliability                 | Forecast vs actual sales trend comparison     |
 | FR6 | Operational response efficiency      | Reduction in process steps, Decision turnaround time from insight to action |
+
 
