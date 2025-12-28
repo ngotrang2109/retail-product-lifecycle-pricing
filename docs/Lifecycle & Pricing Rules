@@ -1,0 +1,87 @@
+Lifecycle & Pricing Rules
+## 1. Purpose
+This document defines the business rules used to:
+Classify products into lifecycle stages
+Identify Key and Potential products
+Apply pricing strategies aligned with lifecycle stage and product role
+These rules support pricing optimization, inventory management and operational decision-making.
+
+---
+
+## 2. Inputs & Data Considerations
+The following data is used as input for lifecycle and pricing decisions:
+Historical sales volume
+Revenue contribution
+Sales growth trend
+Product age (time since launch)
+Current inventory level
+Note: Specific calculation methods are defined in the system design and are not covered in this document.
+
+---
+
+## 3. Product Lifecycle Classification Rules
+### 3.1 Lifecycle Stages
+Products are classified into one of the following lifecycle stages:
+Introduction
+Growth
+Maturity
+Decline
+### 3.2 Lifecycle Classification Logic (High-level)
+Criteria	Description
+Sales Volume	Absolute sales performance over recent periods
+Sales Trend	Increasing, stable or declining trend
+Product Age	Time since product launch
+General classification principles:
+New products with low sales volume → Introduction
+Products with strong and increasing sales → Growth
+Products with stable high sales → Maturity
+Products with declining sales over time → Decline
+Lifecycle classification is reviewed on a regular basis to reflect changes in sales performance.
+
+---
+
+## 4. Product Role Identification Rules
+### 4.1 Product Roles
+In addition to lifecycle stage, products are categorized into business roles:
+Key Products
+Potential Products
+Other Products
+### 4.2 Product Role Logic
+Role	Business Characteristics
+Key Products	High revenue contribution and strong sales performance
+Potential Products	Moderate revenue with positive growth signals
+Other Products	Low contribution or limited growth potential
+Product roles are used to prioritize pricing, inventory and marketing actions.
+
+---
+
+## 5. Pricing Strategy Rules
+Pricing strategies are determined by the combination of:
+Product lifecycle stage
+Product role
+### 5.1 Pricing Strategy by Lifecycle & Role
+Lifecycle Stage	Product Role	Pricing Strategy
+Growth	Key	Maintain price stability, ensure inventory availability
+Growth	Potential	Selective promotions to drive volume
+Maturity	Key	Optimize margin, limited discounting
+Maturity	Potential	Tactical promotions
+Decline	Any	Clearance pricing to reduce inventory
+### 5.2 Pricing Principles
+Pricing decisions aim to balance revenue growth and inventory risk
+Promotional pricing is focused on products with growth potential
+Clearance pricing is applied to reduce slow-moving inventory
+
+---
+
+## 6. Inventory & Operational Impact
+Lifecycle and pricing rules support the following operational actions:
+Early identification of overstock and stockout risks
+Prioritization of restock for Key and Growth products
+Triggering operational workflows for pricing or inventory review
+
+---
+
+## 7. Review & Governance
+Lifecycle and pricing rules are reviewed periodically
+Adjustments are made based on business performance and market conditions
+Final approval is owned by the Business and Pricing teams
