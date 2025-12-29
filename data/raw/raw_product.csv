@@ -1,0 +1,26 @@
+product_id,code,name,price,image,category_id,inventory_damaged
+1000,KS05_T_XS,KS05_T Size XS,471958,https://dummyimage.com/sku.png,1,2
+1001,KS05_T_S,KS05_T Size S,469879,https://dummyimage.com/sku.png,1,4
+1002,KS05_T_M,KS05_T Size M,404886,https://dummyimage.com/sku.png,2,2
+1003,KS05_T_L,KS05_T Size L,518266,https://dummyimage.com/sku.png,3,4
+1004,KS05_T_XL,KS05_T Size XL,525203,https://dummyimage.com/sku.png,3,4
+1005,KA14_H_XS,KA14_H Size XS,350769,https://dummyimage.com/sku.png,2,1
+1006,KA14_H_S,KA14_H Size S,355311,https://dummyimage.com/sku.png,1,0
+1007,KA14_H_M,KA14_H Size M,534779,https://dummyimage.com/sku.png,2,4
+1008,KA14_H_L,KA14_H Size L,574088,https://dummyimage.com/sku.png,1,2
+1009,KA14_H_XL,KA14_H Size XL,506730,https://dummyimage.com/sku.png,3,1
+1010,KN17_D_XS,KN17_D Size XS,499503,https://dummyimage.com/sku.png,3,2
+1011,KN17_D_S,KN17_D Size S,417435,https://dummyimage.com/sku.png,3,3
+1012,KN17_D_M,KN17_D Size M,381551,https://dummyimage.com/sku.png,1,2
+1013,KN17_D_L,KN17_D Size L,419092,https://dummyimage.com/sku.png,3,4
+1014,KN17_D_XL,KN17_D Size XL,561110,https://dummyimage.com/sku.png,2,3
+1015,KB20_X_XS,KB20_X Size XS,358792,https://dummyimage.com/sku.png,2,1
+1016,KB20_X_S,KB20_X Size S,524073,https://dummyimage.com/sku.png,1,1
+1017,KB20_X_M,KB20_X Size M,418148,https://dummyimage.com/sku.png,2,3
+1018,KB20_X_L,KB20_X Size L,470174,https://dummyimage.com/sku.png,3,3
+1019,KB20_X_XL,KB20_X Size XL,367159,https://dummyimage.com/sku.png,3,2
+1020,KM11_Y_XS,KM11_Y Size XS,430077,https://dummyimage.com/sku.png,1,3
+1021,KM11_Y_S,KM11_Y Size S,548193,https://dummyimage.com/sku.png,2,1
+1022,KM11_Y_M,KM11_Y Size M,402995,https://dummyimage.com/sku.png,2,4
+1023,KM11_Y_L,KM11_Y Size L,526830,https://dummyimage.com/sku.png,2,1
+1024,KM11_Y_XL,KM11_Y Size XL,552283,https://dummyimage.com/sku.png,2,1
