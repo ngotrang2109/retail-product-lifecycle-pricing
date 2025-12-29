@@ -42,8 +42,7 @@ It enables targeted pricing, demand forecasting and workflow automation reduce i
 - This classification enables targeted pricing, inventory and marketing actions.
 
 💰 Pricing Strategy
- - Pricing strategies are aligned with lifecycle stage and product role.
- - [Lifecycle & Pricing Rules](docs/Lifecycle&Pricing_rules.md)
+- Pricing strategies are aligned with lifecycle stage and product role.
 
 📈 Demand Forecasting & Restock Planning
 - A simple demand forecasting approach is applied using historical sales trends.
@@ -59,15 +58,16 @@ It enables targeted pricing, demand forecasting and workflow automation reduce i
 - [As-Is / To-Be Process](docs/AsIs_ToBe.drawio.png)
 - [Wireframe / Prototype](figma-link)
 - [UAT Summary](docs/UAT_Summary.md)
-
+- [Lifecycle & Pricing Rules](docs/Lifecycle&Pricing_rules.md)
 
 ---
 ## 7. 📊 Data Sources
-This project uses simulated omnichannel retail data, including:
-- Sales transactions (in-store and online)
-- Inventory levels
+This project uses simulated omnichannel retail data generated for portfolio demonstration purposes. 
+The datasets represent:
 - Product master data
-- Product launch timeline
+- Launch timing
+- Sales transactions
+- Inventory movements
 
 ---
 
