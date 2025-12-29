@@ -72,8 +72,8 @@ This project uses simulated omnichannel retail data, including:
 ---
 
 ## 8. 🛠 Tools & Technologies
-- SQL for [Data integration](sql/data_integration.sql), [Data cleaning](sql/Data_cleaning.sql), [Data transformation](sql/Data_Transformation.sql), [Aggregations](sql/aggregations.sql)
-- Python for data validation and business rule verification, forecasting logic prototyping
+- SQL for [Data cleaning](sql/01_cleaning.sql), [Quality checks](sql/02_quality_checks.sql), [Data integration](sql/03_integration.sql), [Data transformation](sql/04_transformation.sql), [Aggregations](sql/05_aggregation.sql)
+- Python for forecasting logic prototyping
 - Larksuite for workflows automation
 
 ---
