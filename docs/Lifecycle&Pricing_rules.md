@@ -44,6 +44,7 @@ General classification principles:
 
 Lifecycle classification is reviewed on a regular basis to reflect changes in sales performance.
 
+Not all products will experience all lifecycle stages. Lifecycle classification is rule-based and products may skip stages depending on sales performance and demand signals
 ---
 
 ## 4. Product Role Identification Rules
@@ -56,7 +57,7 @@ In addition to lifecycle stage, products are categorized into business roles:
 ### 4.2 Product Role Logic
 Role	Business Characteristics
 - Key Products:	High sales volume and stable performance (core revenue and traffic drivers).
-- Potential Products:	Products showing positive growth signals with opportunities for scaling (marketing seeds).
+- Potential Products:	Products showing positive growth signals with opportunities for scaling.
 - Other Products
   
 Product roles are used to prioritize pricing, inventory and marketing actions.
@@ -84,9 +85,9 @@ Pricing strategies are determined by the combination of:
 
 ## 6. Inventory & Operational Impact
 Lifecycle and pricing rules enable the following operational actions:
-- Early identification of overstock and stockout risks
-- Prioritization of restock for Key and Growth products
-- Triggering production or marketing actions based on demand signals
+- Early identification of overstock and stockout risks.
+- Prioritization of restock planing and marketing budget for Key and Potential products.
+- Triggering production or marketing actions based on demand signals.
 
 ---
 
