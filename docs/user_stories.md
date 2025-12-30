@@ -39,7 +39,7 @@ Data Source:
 ### US-02: Pricing Strategy Recommendation
 (FR2 – Pricing Strategy Recommendation)
 
-**As a** Sales Manager
+**As a** Sales & Marketing Manager
 **I want** pricing recommendations aligned with product lifecycle stage
 **So that** pricing decisions are consistent and data-driven.
 
@@ -126,3 +126,4 @@ Acceptance Criteria
 Data Source
 - dm_sku_snapshot
 - Workflow Scenarios
+
