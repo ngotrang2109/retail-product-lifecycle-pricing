@@ -48,17 +48,21 @@ It enables targeted pricing, demand forecasting and workflow automation reduce i
 - A simple demand forecasting approach is applied using historical sales trends.
 - This helps reduce stockout and overstock risks.
 
-🔁 Process Improvement & Workflow automation (Production Planning)
+🔁 Process Improvement & Workflow automation (Decision-Driven)
+- This project defines business workflow scenarios that translate product lifecycle classification, pricing insights, and inventory risk signals into operational actions.
+- The workflows focus on decision triggers, ownership, and expected business outcomes, supporting faster pricing reviews, restock planning, and product prioritization without relying on complex system automation.
 
 ---
 
 ## 6. 🧩Deliverables
 - [BRD](docs/business_requirements.md)
 - [User Stories](docs/user_stories.md)
-- [As-Is / To-Be Process](docs/AsIs_ToBe.drawio.png)
-- [Wireframe / Prototype](figma-link)
-- [UAT Summary](docs/UAT_Summary.md)
 - [Lifecycle & Pricing Rules](docs/Lifecycle&Pricing_rules.md)
+- [Demand and Inventory Rules](docs/Demand_and_Inventory_Rules.md)
+- [Workflow Automation Scenarios](docs/Workflow_Automation_Scenarios.md)
+- [Data Mart Usage Guide](docs/Data_Mart_Usage_Guide.md)
+- [Data Fields Overview](data/data_fields_overview.md)
+- [SQL Pipeline Overview](sql/SQL_pipeline_overview.md)
 
 ---
 ## 7. 📊 Data Sources
