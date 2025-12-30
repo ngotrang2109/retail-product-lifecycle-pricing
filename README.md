@@ -55,8 +55,8 @@ It enables targeted pricing, demand forecasting and workflow automation reduce i
 ---
 
 ## 6. 🧩Deliverables
-- [BRD](docs/business_requirements.md)
-- [User Stories](docs/user_stories.md)
+- [BRD](docs/Business_requirements.md)
+- [User Stories](docs/User_stories.md)
 - [Lifecycle & Pricing Rules](docs/Lifecycle&Pricing_rules.md)
 - [Demand and Inventory Rules](docs/Demand_and_Inventory_Rules.md)
 - [Workflow Automation Scenarios](docs/Workflow_Automation_Scenarios.md)
