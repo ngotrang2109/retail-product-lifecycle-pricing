@@ -50,7 +50,7 @@ It enables targeted pricing, demand forecasting and workflow automation reduce i
 
 🔁 Process Improvement & Workflow automation (Decision-Driven)
 - This project defines business workflow scenarios that translate product lifecycle classification, pricing insights, and inventory risk signals into operational actions.
-- The workflows focus on decision triggers, ownership, and expected business outcomes, supporting faster pricing reviews, restock planning, and product prioritization without relying on complex system automation.
+- The data mart outputs are designed to trigger operational workflows in LarkSuite, supporting pricing review, restock planning, and inventory risk management.
 
 ---
 
