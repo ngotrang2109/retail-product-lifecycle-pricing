@@ -22,15 +22,23 @@ The following data is used as input for lifecycle and pricing decisions:
 
 ---
 
-## 3. Product Lifecycle Classification Rules
-### 3.1 Lifecycle Stages
+## 3. Key Assumptions
+- Launch date represents the first commercial selling date of a SKU
+- Inventory movements are derived exclusively from inventory transaction data
+- Returned quantities do not contribute to positive sales velocity
+- Lifecycle status is evaluated daily and can change over time
+
+---
+
+## 4. Product Lifecycle Classification Rules
+### 4.1 Lifecycle Stages
 Products are classified into one of the following lifecycle stages:
 - New
 - Growth
 - Maturity
 - Decline
   
-### 3.2 Lifecycle Classification Logic (High-level)
+### 4.2 Lifecycle Classification Logic (High-level)
 Criteria	Description
 - Sales Volume:	Absolute sales performance over recent periods
 - Sales Trend:	Increasing, stable or declining trend
@@ -42,19 +50,21 @@ General classification principles:
 - Maturity: Products with high and stable sales, indicating market saturation.
 - Decline: Products experiencing consistent sales decline.
 
-Lifecycle classification is reviewed on a regular basis to reflect changes in sales performance.
+Lifecycle classification is reviewed on a regular basis to reflect changes in sales performance and market demand.
 
-Not all products will experience all lifecycle stages. Lifecycle classification is rule-based and products may skip stages depending on sales performance and demand signals
+Not all products will experience all lifecycle stages. 
+Lifecycle classification is rule-based and products may skip stages depending on sales performance signals.
+
 ---
 
-## 4. Product Role Identification Rules
-### 4.1 Product Roles
+## 5. Product Role Identification Rules
+### 5.1 Product Roles
 In addition to lifecycle stage, products are categorized into business roles:
 - Key Products
 - Potential Products
 - Other Products
   
-### 4.2 Product Role Logic
+### 5.2 Product Role Logic
 Role	Business Characteristics
 - Key Products:	High sales volume and stable performance (core revenue and traffic drivers).
 - Potential Products:	Products showing positive growth signals with opportunities for scaling.
@@ -64,7 +74,7 @@ Product roles are used to prioritize pricing, inventory and marketing actions.
 
 ---
 
-## 5. Pricing Strategy Rules
+## 6. Pricing Strategy Rules
 Pricing strategies are determined by the combination of:
 - Product lifecycle stage
 - Product role
@@ -72,7 +82,7 @@ Pricing strategies are determined by the combination of:
 ### Pricing Strategy by Lifecycle & Role
 |Lifecycle Stage |Product Role |Pricing Strategy |Business actions |
 |------|----------|------------------|-------------------------------|
-|New	|Any	|Entry-level pricing |Test market response with controlled SKU investment |
+|New	|Any	|Entry pricing |Test market response with controlled SKU investment |
 |Growth	|Key	|Maintain price stability |Maximize revenue and ensure product availability |
 |Growth	|Potential	|Controlled promotional pricing |Increase volume and upgrade to Key status |
 |Growth	|Other	|Selective promotions |Support sales with limited investment |
@@ -83,15 +93,8 @@ Pricing strategies are determined by the combination of:
 
 ---
 
-## 6. Inventory & Operational Impact
+## 7. Inventory & Operational Impact
 Lifecycle and pricing rules enable the following operational actions:
 - Early identification of overstock and stockout risks.
-- Prioritization of restock planing and marketing budget for Key and Potential products.
+- Prioritization of restock planning and marketing budget for Key and Potential products.
 - Triggering production or marketing actions based on demand signals.
-
----
-
-## 7. Review & Governance
-- Lifecycle and pricing rules are reviewed periodically
-- Adjustments are made based on business performance and market conditions
-- Final approval is owned by the Business and Pricing teams
