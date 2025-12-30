@@ -72,7 +72,8 @@ Out of scope:
 
 - FR5: Demand Forecasting for Restock planning
 
-  The system shall forecast product demand to support restock planning and reduce stockout risks.
+  - The system shall forecast product demand to support restock planning and reduce stockout risks.
+  - Rather than applying complex predictive models, the forecasting approach focuses on explainable, rule-based demand estimation derived from historical sales and inventory data.
 
 - FR6: Operational Workflow automation
 
@@ -90,6 +91,7 @@ Out of scope:
 ## 7. Assumptions
 - Sales data is accurate and complete.
 - Inventory levels are updated regularly.
+- Forecasting is based on historical sales data and does not account for complex seasonality.
 
 ---
 
@@ -109,6 +111,7 @@ Out of scope:
 - Lifecycle and pricing rules are reviewed periodically
 - Adjustments are made based on business performance and market conditions
 - Final approval is owned by the Business and Pricing teams
+
 
 
 
