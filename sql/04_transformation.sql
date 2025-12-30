@@ -24,9 +24,40 @@ LEFT JOIN stg_launch_time l
   ON d.sku_code = l.sku_code
 WHERE l.launch_date IS NOT NULL;
 
--- 2. Lifecycle & pricing strategy
+-- 2. Demand signals (FR5)
+CREATE OR REPLACE TABLE trf_daily_sku_demand AS
+SELECT
+    *,
+
+    -- Rolling average sales (last 7 days)
+    AVG(total_sold_qty)
+        OVER (
+            PARTITION BY sku_code
+            ORDER BY order_date
+            ROWS BETWEEN 6 PRECEDING AND CURRENT ROW
+        ) AS avg_daily_sales_7d
+
+FROM trf_daily_sku;
+
+-- 3. Lifecycle, product role & pricing strategy
 CREATE OR REPLACE TABLE trf_daily_sku_lifecycle AS
 SELECT *,
+    -- Days on Hand (FR5)
+    CASE
+        WHEN avg_daily_sales_7d > 0
+        THEN ROUND(inventory_remain / avg_daily_sales_7d, 1)
+        ELSE NULL
+    END AS days_on_hand,
+
+    -- Stockout risk (FR5)
+    CASE
+        WHEN avg_daily_sales_7d > 0 AND inventory_remain / avg_daily_sales_7d < 7
+            THEN 'High'
+        WHEN avg_daily_sales_7d > 0 AND inventory_remain / avg_daily_sales_7d BETWEEN 7 AND 21
+            THEN 'Medium'
+        ELSE 'Low'
+    END AS stockout_risk,
+
     -- Average daily sales since launch
     CASE
         WHEN sku_age > 0 THEN
@@ -44,6 +75,17 @@ SELECT *,
         ELSE 'Maturity'
     END AS lifecycle_stage,
 
+    -- Product role (FR4)
+    CASE
+        WHEN lifecycle_stage IN ('Growth', 'Maturity')
+             AND avg_daily_sales_7d >= 2
+            THEN 'Key'
+        WHEN lifecycle_stage = 'Growth'
+             AND avg_daily_sales_7d BETWEEN 1 AND 2
+            THEN 'Potential'
+        ELSE 'Other'
+    END AS product_role,
+
     -- Pricing strategy
     CASE
         WHEN sku_age <= 30 THEN 'Maintain list price'
@@ -52,4 +94,4 @@ SELECT *,
         WHEN inventory_remain <= 0 THEN 'Hold / Restock'
         ELSE 'Selective discount'
     END AS pricing_strategy
-FROM trf_daily_sku;
+FROM trf_daily_sku_demand;
