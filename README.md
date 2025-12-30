@@ -61,7 +61,7 @@ It enables targeted pricing, demand forecasting and workflow automation reduce i
 - [Demand and Inventory Rules](docs/Demand_and_Inventory_Rules.md)
 - [Workflow Automation Scenarios](docs/Workflow_Automation_Scenarios.md)
 - [Data Mart Usage Guide](docs/Data_Mart_Usage_Guide.md)
-- [Data Fields Overview](data/data_fields_overview.md)
+- [Raw Data Fields Overview](data/raw_data_fields_overview.md)
 - [SQL Pipeline Overview](sql/SQL_pipeline_overview.md)
 
 ---
