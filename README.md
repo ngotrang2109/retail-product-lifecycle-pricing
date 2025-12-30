@@ -58,7 +58,6 @@ It enables targeted pricing, demand forecasting and workflow automation reduce i
 - [BRD](docs/Business_requirements.md)
 - [User Stories](docs/User_stories.md)
 - [Lifecycle & Pricing Rules](docs/Lifecycle&Pricing_rules.md)
-- [Demand and Inventory Rules](docs/Demand_and_Inventory_Rules.md)
 - [Workflow Automation Scenarios](docs/Workflow_Automation_Scenarios.md)
 - [Data Mart Usage Guide](docs/Data_Mart_Usage_Guide.md)
 - [Raw Data Fields Overview](data/raw_data_fields_overview.md)
@@ -77,7 +76,6 @@ The datasets represent:
 
 ## 8. 🛠 Tools & Technologies
 - SQL for [Data cleaning](sql/01_cleaning.sql), [Quality checks](sql/02_quality_checks.sql), [Data integration](sql/03_integration.sql), [Data transformation](sql/04_transformation.sql), [Aggregations](sql/05_aggregation.sql)
-- Python for forecasting logic prototyping
 - Larksuite for workflows automation
 
 ---
