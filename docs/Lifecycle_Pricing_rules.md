@@ -93,7 +93,16 @@ Pricing strategies are determined by the combination of:
 
 ---
 
-## 7. Inventory & Operational Impact
+## 7. Demand Forecasting Principles
+
+Demand forecasting is used to support restock planning decisions by providing early visibility into future demand and potential stockout risks.
+
+Forecast signals are derived from recent sales trends and current inventory levels.
+They serve as decision support indicators and do not replace business judgment or automated ordering.
+
+---
+
+## 8. Inventory & Operational Impact
 Lifecycle and pricing rules enable the following operational actions:
 - Early identification of overstock and stockout risks.
 - Prioritization of restock planning and marketing budget for Key and Potential products.
