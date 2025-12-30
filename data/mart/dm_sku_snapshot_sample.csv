@@ -1,0 +1,6 @@
+sku_code,lifecycle_stage,pricing_strategy,sku_age,inventory_remain,avg_daily_sales,total_sold_qty
+KA14_H,Growth,Tactical promotion,124,384,10.85483870967742,4
+KB20_X,Growth,Tactical promotion,128,44,4.8203125,1
+KM11_Y,Growth,Tactical promotion,156,72,8.615384615384615,4
+KN17_D,Growth,Tactical promotion,160,824,7.6625,5
+KS05_T,Growth,Tactical promotion,133,464,10.075187969924812,3

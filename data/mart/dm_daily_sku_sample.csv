@@ -1,0 +1,11 @@
+order_date,sku_code,lifecycle_stage,pricing_strategy,total_sold_qty,inventory_remain
+2023-01-01,KA14_H,New,Maintain list price,0,0
+2023-01-01,KA14_H,New,Maintain list price,0,0
+2023-01-01,KB20_X,New,Maintain list price,2,0
+2023-01-01,KM11_Y,New,Maintain list price,5,0
+2023-01-01,KM11_Y,New,Maintain list price,5,0
+2023-01-01,KN17_D,New,Maintain list price,4,0
+2023-01-01,KN17_D,New,Maintain list price,4,0
+2023-01-01,KS05_T,New,Maintain list price,7,0
+2023-01-01,KS05_T,New,Maintain list price,7,0
+2023-01-02,KA14_H,New,Maintain list price,2,0
