@@ -21,8 +21,12 @@ This separation allows:
 ---
 
 ## 2. High-Level Pipeline Structure
-
-Raw data -> Cleaning & Standardization -> Data Quality Checks -> Multi-source Integration -> Business Transformation -> Aggregation & Analytics Mart
+Raw Data
+ → Cleaning & Standardization
+ → Data Quality Checks
+ → Multi-source Integration
+ → Business Transformation
+ → Aggregation & Analytics Data Marts
 
 Each stage is implemented as a separate SQL script to improve clarity,
 maintainability, and validation.
@@ -72,14 +76,15 @@ Create a unified view of sales and inventory across all channels.
 
 **Key Activities**
 
-- Combine online sales, offline POS, wholesale, and inventory movements
-- Use full joins to avoid losing transactions from any channel
-- Consolidate data at the daily SKU level
+- Combine online sales, offline POS, wholesale, and inventory movements.
+- Treat inventory movements as a single source of truth for stock changes.
+- Consolidate data at the daily SKU level.
 
 **Business Rationale**  
-Merchandising and pricing decisions require a holistic view of product performance,
+- Merchandising and pricing decisions require a holistic view of product performance,
 not isolated channel reports.
-
+- Clear separation between sales metrics and inventory movements prevents
+double counting and ensures inventory accuracy.
 ---
 
 ### 3.4 Business Transformation (`04_transformation.sql`)
@@ -89,42 +94,44 @@ Translate raw data into meaningful business insights and decision-support metric
 
 **Key Transformations**
 
-- Inventory balance calculation
-- SKU age and lifecycle classification
-- Sales velocity and performance evaluation
-- Pricing strategy mapping by lifecycle stage
+- SKU age and lifecycle classification.
+- Sales velocity and performance evaluation.
+- Cumulative inventory balance calculation.
+- Product role identification (Key / Potential / Other – FR4).
+- Demand forecasting signals such as Days on Hand and Stockout Risk (FR5).
+- Pricing strategy mapping based on lifecycle stage and product role.
 
 **Business Rationale**  
-This stage implements the core business rules that drive lifecycle-based pricing
-and inventory strategies.
+This stage implements the core business rules that drive lifecycle-based pricing and inventory strategies.
 
 ---
 
 ### 3.5 Aggregation & Analytics Mart (`05_aggregation.sql`)
 
 **Business Objective**  
-Provide simplified, decision-ready datasets for analysis and reporting.
+Deliver simplified, analytics-ready datasets for business consumption and workflow triggering.
 
 **Key Outputs**
 
-- Daily SKU performance fact table
-- SKU lifecycle snapshot by batch/launch
-- Inventory risk and stock-out indicators
+- dm_daily_sku: Daily SKU-level fact table for trend analysis and early risk detection
+- dm_sku_snapshot: Latest SKU state including lifecycle stage, product role, pricing strategy,
+and demand signals for operational decision-making
 
 **Business Rationale**  
-Aggregated views reduce complexity for business users and enable faster,
-more consistent decision-making.
+Aggregated views reduce complexity for business users and enable faster, more consistent decision-making.
 
 ---
 
 ## 4. Relationship to Business Requirements
 
-| Business Requirement            | Pipeline Stage               |
-| ------------------------------- | ---------------------------- |
-| Lifecycle classification        | Transformation               |
-| Pricing strategy recommendation | Transformation               |
-| Inventory risk identification   | Transformation & Aggregation |
-| Performance monitoring          | Aggregation                  |
+| Business Requirement                          | Pipeline Stage                  |
+| --------------------------------------------- | ------------------------------- |
+| FR1 – Lifecycle classification                | Transformation                  |
+| FR2 – Pricing strategy recommendation         | Transformation                  |
+| FR3 – Inventory risk identification           | Transformation & Aggregation    |
+| FR4 – Key & Potential product identification  | Transformation                  |
+| FR5 – Demand forecasting for restock planning | Transformation & Aggregation    |
+| FR6 – Workflow automation support             | Aggregation (decision triggers) |
 
 This structure ensures traceability from business requirements to data outputs.
 
