@@ -10,8 +10,12 @@ SELECT
     sku_code,
     lifecycle_stage,
     pricing_strategy,
+    product_role,
     total_sold_qty,
-    inventory_remain
+    inventory_remain,
+    avg_daily_sales_7d,
+    days_on_hand,
+    stockout_risk
 FROM trf_daily_sku_lifecycle;
 
 -- 2. SKU lifecycle snapshot (latest state per SKU)
@@ -19,11 +23,16 @@ CREATE OR REPLACE TABLE dm_sku_snapshot AS
 SELECT
     sku_code,
     lifecycle_stage,
+    product_role,
     pricing_strategy,
     sku_age,
     inventory_remain,
+    total_sold_qty,
     avg_daily_sales,
-    total_sold_qty
+    total_sold_qty,
+    avg_daily_sales_7d,
+    days_on_hand,
+    stockout_risk
 FROM (
     SELECT
         *,
