@@ -1,9 +1,13 @@
 # Business Requirements Document (BRD)
 
 ## 1. Business Problem
+The retail business operates across multiple sales channels (online, offline,
+wholesale) with fast-moving products and frequent SKU launches.
+
 Retail businesses face inventory imbalances (overstock/shortage) owing to:
-- Products at different lifecycle stages (new, growth, maturity, decline).
-- Pricing not aligned with sales performance.
+- Inventory data fragmented between sales and warehouse systems.
+- No single view of SKU performance across channels.
+- Pricing not aligned with sales performance and product maturity.
 - Lack of demand forecasting and slow operational reactions.
 
   These issues result in increased holding costs, lost sales opportunities and inefficient marketing spend.
@@ -13,8 +17,8 @@ This project aims to classify products by lifecycle, identify key products & pot
 ---
 
 ## 2. Business Objectives
-- Classify products by lifecycle stage based on sales volume and product age.
-- Identify Key Products and Potential Products to prioritize pricing and marketing strategies.
+- More consistent and explainable pricing decisions.
+- Faster identification of slow-moving and high-potential SKUs.
 - Reduce overstock and stockout risks through early inventory risk detection.
 - Support timely restock planning using demand forecasting.
 - Improve operational efficiency via workflow automation.
@@ -30,8 +34,9 @@ This project aims to classify products by lifecycle, identify key products & pot
 
 ## 4. Scope
 In scope:
-- Product lifecycle classification.
-- Pricing strategy recommendations.
+- Product lifecycle classification based on sales velocity and age.
+- Pricing strategy mapping aligned with lifecycle stages.
+- Daily and snapshot data mart to support operational decisions.
 - Identification of key and potential products.
 - Demand forecasting for restock planning.
 - Process improvement and workflow automation for operational reaction.
@@ -39,7 +44,7 @@ In scope:
 Out of scope:
 - Real-time system integration.
 - Automated pricing execution.
-- Supplier negotiation and production procurement execution.
+- Automated production procurement execution.
 
 ---
 
@@ -97,6 +102,15 @@ Out of scope:
 | FR4 | Product prioritization effectiveness | Consistency of prioritized product list across teams |
 | FR5 | Forecast reliability                 | Forecast vs actual sales trend comparison     |
 | FR6 | Operational response efficiency      | Reduction in process steps, Decision turnaround time from insight to action |
+
+---
+
+## 9. Review & Governance
+- Lifecycle and pricing rules are reviewed periodically
+- Adjustments are made based on business performance and market conditions
+- Final approval is owned by the Business and Pricing teams
+
+
 
 
 
